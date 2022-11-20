@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-card-header>
+      <ion-card-title>Geolocalización</ion-card-title>
+      <ion-card-subtitle>Obtener las coordenadas</ion-card-subtitle>
+      <ion-card-subtitle>
+        <ion-item>
+          <ion-label position="floating">Título</ion-label>
+          <ion-input clearInput value="X" type="text" placeholder="Enter a title" [(ngModel)]="title"></ion-input>
+        </ion-item>
+        <br/>
+        <ion-item>
+          <ion-label position="floating">Lat</ion-label>
+          <ion-input clearInput value="X" type="text" placeholder="Enter a lat" [(ngModel)]="lat"></ion-input>
+        </ion-item>
+        <br/>
+        <ion-item>
+          <ion-label position="floating">Lng</ion-label>
+          <ion-input clearInput value="X" type="text" placeholder="Enter a lng" [(ngModel)]="lng"></ion-input>
+        </ion-item>
+        <br/>
+        <ion-item lines="none">
+          <ion-button style="width: 100px; height: 40px; font-size: 14px; text-transform: none;" (click)="sendMarker()">Save</ion-button>
+        </ion-item>
+      </ion-card-subtitle>
+    </ion-card-header>
+  </div>
+</ion-content>
